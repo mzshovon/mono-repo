@@ -26,6 +26,10 @@ export default function SystemCheckAlert({children}) {
                     }       
                 })
             } catch (error) {
+                setData({
+                    'status' : 500,
+                    'message' : 'Application is unreachable'
+                })
                 setIsSystemUp(false);
                 
             } finally {

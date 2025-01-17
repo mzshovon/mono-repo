@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Modal from './Components/Modal';
+import SystemCheckAlert from './Components/SystemCheckAlert';
+import Form from './Components/Form';
 
 function App() {
   return (
     <div className="App">
-      <Modal/>
+      <SystemCheckAlert>
+        <Form/>
+      </SystemCheckAlert>
     </div>
   );
 }

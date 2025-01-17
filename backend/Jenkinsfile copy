@@ -1,0 +1,83 @@
+pipeline {
+    agent any
+
+    environment {
+        DEPLOY_HOST = "server"
+        BUILD_FOR = "production"
+    }
+
+    stages {
+        stage('BuildAndDeploy') {
+            matrix {
+                axes {
+                    axis {
+                        name 'SERVERS'
+                        values 'server'
+                    }
+                }
+
+                stages {
+                    stage('Pull Code') {
+                        steps {
+                            git branch: 'master',
+                                credentialsId: 'github-pookie',
+                                url: 'repo'
+                        }
+                    }
+                    stage('Approve Deployment') {
+                        steps {
+                            input "Deploy to production?"
+                        }
+                    }
+                    stage('Removing files') {
+                        steps {
+                            sh "rm -r ${WORKSPACE}/.git"
+                            sh "rm ${WORKSPACE}/Jenkinsfile*"
+                        }
+                    }
+                    stage('Start Container') {
+                        steps {
+                            script {
+                                withCredentials([usernamePassword(credentialsId: 'feedsense-portal-user', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+                                    sh """
+                                        sshpass -p '${PASSWORD}' ssh -o StrictHostKeyChecking=no ${USERNAME}@${SERVERS} "cd /path;docker compose up -d"
+                                        sshpass -p '${PASSWORD}' ssh -o StrictHostKeyChecking=no ${USERNAME}@${SERVERS} "cd /path;docker compose exec php chmod -Rf 777 storage vendor"
+                                        sshpass -p '${PASSWORD}' ssh -o StrictHostKeyChecking=no ${USERNAME}@${SERVERS} "cd /path;docker compose exec php chmod 400 .env"
+                                    """
+                                }
+                            }
+                        }
+                    }
+
+                    stage('Composer And Cache') {
+                        steps {
+                            script {
+                                withCredentials([usernamePassword(credentialsId: 'feedsense-portal-user', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+                                    sh """
+                                        sshpass -p '${PASSWORD}' ssh -o StrictHostKeyChecking=no ${USERNAME}@${SERVERS} "cd /path;docker compose exec php composer install"
+                                        sshpass -p '${PASSWORD}' ssh -o StrictHostKeyChecking=no ${USERNAME}@${SERVERS} "cd /path;docker compose exec php php artisan config:clear"
+                                        sshpass -p '${PASSWORD}' ssh -o StrictHostKeyChecking=no ${USERNAME}@${SERVERS} "cd /path;docker compose exec php php artisan optimize"
+                                    """
+                                }
+                            }
+                        }
+                    }
+
+
+                    stage('DB Migration and Seed') {
+                        steps {
+                            script {
+                                withCredentials([usernamePassword(credentialsId: 'feedsense-portal-user', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+                                    sh """
+                                        sshpass -p '${PASSWORD}' ssh -o StrictHostKeyChecking=no ${USERNAME}@${SERVERS} "cd /path;docker compose exec php php artisan migrate --force"
+                                        sshpass -p '${PASSWORD}' ssh -o StrictHostKeyChecking=no ${USERNAME}@${SERVERS} "cd /path;docker compose exec php php artisan db:seed --force"
+                                    """
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

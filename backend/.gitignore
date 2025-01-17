@@ -1,0 +1,17 @@
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+app/storage/
+
+public/storage
+
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant
+.phpunit.result.cache
+docker-compose.yml
+db-data

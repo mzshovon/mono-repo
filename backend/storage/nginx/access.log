@@ -1,0 +1,141 @@
+172.18.0.1 - [28/Dec/2024:05:14:05 +0000] "GET /api HTTP/1.1" 404 125 "-" "PostmanRuntime/7.43.0" - - 0.000 287888095fe4cafc65d7803af94eb8a6 -
+172.18.0.1 - [28/Dec/2024:05:14:25 +0000] "GET /api HTTP/1.1" 404 125 "-" "PostmanRuntime/7.43.0" - - 0.000 e31956db0ab457de0192ae2a43bc1f03 -
+172.18.0.1 - [28/Dec/2024:05:15:10 +0000] "GET /api HTTP/1.1" 404 125 "-" "PostmanRuntime/7.43.0" - - 0.000 58fae7bb28892197c41e3ac62df4cb56 -
+172.18.0.1 - [28/Dec/2024:05:17:03 +0000] "GET /api HTTP/1.1" 404 125 "-" "PostmanRuntime/7.43.0" - - 0.000 6e45821322c1d6c977868f2610362922 -
+172.18.0.1 - [28/Dec/2024:05:17:04 +0000] "GET /api HTTP/1.1" 404 125 "-" "PostmanRuntime/7.43.0" - - 0.000 0b2fcb24604e153d413255fc1be42327 -
+172.18.0.1 - [28/Dec/2024:05:17:05 +0000] "GET /api HTTP/1.1" 404 125 "-" "PostmanRuntime/7.43.0" - - 0.000 8d0887fa0d7336c9c99a3cffef89f51d -
+172.18.0.1 - [28/Dec/2024:05:18:03 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 b862736cba2c76a90e51596dcfd449f1 -
+172.18.0.1 - [28/Dec/2024:05:18:03 +0000] "GET /api/ HTTP/1.1" 200 55 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.070 0.070 f2dc7affcb60140c3af9a1cadc5a66cb -
+172.18.0.1 - [15/Jan/2025:06:31:58 +0000] "GET /api/scrap HTTP/1.1" 404 2311 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.086 0.086 38a93bc718eb2ca9749eb89d59815e2f -
+172.18.0.1 - [15/Jan/2025:06:32:14 +0000] "GET /api/ HTTP/1.1" 200 55 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.067 0.067 de6414b1f89bf5892164e106450db9bf -
+172.18.0.1 - [15/Jan/2025:06:32:30 +0000] "GET /api/scrap HTTP/1.1" 404 2311 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.072 0.072 de9c5f22caeeaf52ff675eb9527e1ae8 -
+172.18.0.1 - [15/Jan/2025:06:32:59 +0000] "GET /api/scrap HTTP/1.1" 404 2311 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.072 0.072 f787985d918264707ebc8597b31a43c8 -
+172.18.0.1 - [15/Jan/2025:07:13:18 +0000] "GET /api/scrap HTTP/1.1" 404 2311 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.075 0.075 88a63db02d40db622ded4bb77b1c4b59 -
+172.18.0.1 - [15/Jan/2025:07:13:53 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 78d3e3678680129b4e4f4a5145d04b66 -
+172.18.0.1 - [15/Jan/2025:07:13:53 +0000] "GET /api/ HTTP/1.1" 200 55 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.082 0.082 c2f06f5ce042e27ff4e004e37925b9e1 -
+172.18.0.1 - [15/Jan/2025:07:14:04 +0000] "GET /api/scrap/ HTTP/1.1" 404 2311 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.073 0.073 854dc71a7e8fb607ced5f044ff299e50 -
+172.18.0.1 - [15/Jan/2025:07:14:09 +0000] "GET /api/scrap HTTP/1.1" 404 2311 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.078 0.078 19a536c5e61b9f3968f8669506c6a4da -
+172.18.0.1 - [15/Jan/2025:07:14:26 +0000] "GET /api/user HTTP/1.1" 404 2311 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.068 0.068 e7a6ad641396c5e42118917fee3674f4 -
+172.18.0.1 - [15/Jan/2025:07:14:27 +0000] "GET /api/user HTTP/1.1" 404 2311 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.068 0.068 ecc8d8a66a883b7985e9ed78734b4af3 -
+172.18.0.1 - [15/Jan/2025:07:14:29 +0000] "GET /api/user HTTP/1.1" 404 2311 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.073 0.072 27f500d3d0a316f079d1e31c2674c8d5 -
+172.18.0.1 - [15/Jan/2025:07:16:08 +0000] "GET /api/user HTTP/1.1" 404 2311 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.074 0.073 8d0def9e8b32f3634737851694ce9a84 -
+172.18.0.1 - [15/Jan/2025:07:16:56 +0000] "GET /api/user HTTP/1.1" 404 2311 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.074 0.074 5743a174817e04a2998e278e3b3588c4 -
+172.18.0.1 - [15/Jan/2025:07:17:02 +0000] "GET /api/user HTTP/1.1" 404 2311 "-" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.075 0.075 83201eeba3b0049cf9ce5376f869d2f4 -
+172.18.0.1 - [15/Jan/2025:07:17:21 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 e96f3a39943d40a870d50fd4e6b45953 -
+172.18.0.1 - [15/Jan/2025:07:17:35 +0000] "GET /api/ HTTP/1.1" 500 17499 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 14.201 14.201 366496c64ef9e71d4a879768200150a7 -
+172.18.0.1 - [15/Jan/2025:07:17:42 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 94c90c6fd7003a0911ad04026e285c34 -
+172.18.0.1 - [15/Jan/2025:07:17:56 +0000] "GET /api/ HTTP/1.1" 500 17499 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 14.792 14.792 787afead7593b9a0788e5acfe82051ac -
+172.18.0.1 - [15/Jan/2025:07:18:17 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 b3d06da037cc6e0e04003f76c3e094ee -
+172.18.0.1 - [15/Jan/2025:07:18:31 +0000] "GET /api/ HTTP/1.1" 500 17412 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 13.442 13.442 fa404d6456dd27c66a13281621f555de -
+172.18.0.1 - [15/Jan/2025:07:19:31 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 8223312a4e2aa61e10f1a6e5d638763c -
+172.18.0.1 - [15/Jan/2025:07:19:43 +0000] "GET /api/ HTTP/1.1" 500 17412 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 12.003 12.003 fa199d2a542cd508d49e43614cec728e -
+172.18.0.1 - [15/Jan/2025:07:19:57 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 0d10ebbd74a5a3e29e1d58ea2f1ff8af -
+172.18.0.1 - [15/Jan/2025:07:20:09 +0000] "GET /api/ HTTP/1.1" 500 17414 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 12.290 12.290 ceeac63d2f0cbbdabfbd16670126a10d -
+172.18.0.1 - [15/Jan/2025:07:20:25 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 1d517dc59974fa44fb857d8e9ae082ce -
+172.18.0.1 - [15/Jan/2025:07:20:27 +0000] "GET /api/ HTTP/1.1" 500 318517 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.993 1.993 497d5dd0670bb1fa355afcc44bdf66f6 -
+172.18.0.1 - [15/Jan/2025:07:20:49 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 c0287c82960fa43f6e481c58d7299aab -
+172.18.0.1 - [15/Jan/2025:07:20:51 +0000] "GET /api/ HTTP/1.1" 500 332496 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.487 1.487 92ffe31580a65c50772d706226980c4a -
+172.18.0.1 - [15/Jan/2025:07:21:04 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 dc6eb6e7697a0698cc655cba78309b35 -
+172.18.0.1 - [15/Jan/2025:07:21:06 +0000] "GET /api/ HTTP/1.1" 500 17417 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.458 1.458 c761dab85d4ed8f25478e86afab55030 -
+172.18.0.1 - [15/Jan/2025:07:21:49 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 7f5c8a0f2c626f120de9ad65fcf2cf2c -
+172.18.0.1 - [15/Jan/2025:07:21:50 +0000] "GET /api/ HTTP/1.1" 500 17434 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.573 1.573 3597c66fe06ebc2bfa2c8fd3df68195a -
+172.18.0.1 - [15/Jan/2025:07:22:37 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 b1a84e95872213d6279bd315d9abbb86 -
+172.18.0.1 - [15/Jan/2025:07:22:38 +0000] "GET /api/ HTTP/1.1" 500 20732 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.514 1.514 1e5d1638d06d18dd4f847187d03c7e33 -
+172.18.0.1 - [15/Jan/2025:07:25:48 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 b3dac769cbf807855cb32be3c6463b2a -
+172.18.0.1 - [15/Jan/2025:07:25:50 +0000] "GET /api/ HTTP/1.1" 500 56279 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 2.010 2.010 84c37eb98f4ceb0ff1f772073f6b41bd -
+172.18.0.1 - [15/Jan/2025:07:27:34 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 705f7b6dc8081d30f182c588c935e634 -
+172.18.0.1 - [15/Jan/2025:07:27:35 +0000] "GET /api/ HTTP/1.1" 500 56283 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.663 1.663 82b36a2039785661430565f5b8bb8b02 -
+172.18.0.1 - [15/Jan/2025:07:27:44 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 9acc811eb33a471fa6d3148deef02dfc -
+172.18.0.1 - [15/Jan/2025:07:27:46 +0000] "GET /api/ HTTP/1.1" 500 17619 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.431 1.431 bed4fc90ef47a329a335670ca67b32ff -
+172.18.0.1 - [15/Jan/2025:08:01:24 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 80a6830e817fac8a01ffc40d5d75880e -
+172.18.0.1 - [15/Jan/2025:08:01:26 +0000] "GET /api/ HTTP/1.1" 500 38574 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.766 1.766 129cc498a878ded2a29d1530236d1da4 -
+172.18.0.1 - [15/Jan/2025:08:02:14 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 1747cf2d7468d2f74ef428fe45ee2415 -
+172.18.0.1 - [15/Jan/2025:08:02:15 +0000] "GET /api/ HTTP/1.1" 500 17674 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.604 1.603 3d1b066a76a5acf3904a67052dd8d1db -
+172.18.0.1 - [15/Jan/2025:08:02:29 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 f137c58107e29ee66825f303f5b903f4 -
+172.18.0.1 - [15/Jan/2025:08:02:31 +0000] "GET /api/ HTTP/1.1" 500 38576 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.444 1.445 806974506ae4025444c86f75af90f7de -
+172.18.0.1 - [15/Jan/2025:08:03:56 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 bd61bbbeb0d0fb685806ba1fd8b4791f -
+172.18.0.1 - [15/Jan/2025:08:03:58 +0000] "GET /api/ HTTP/1.1" 500 41793 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.881 1.881 1fb9ee5e37e1949e9e07db493a6cd208 -
+172.18.0.1 - [15/Jan/2025:08:05:34 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 0f9fdca5a500115ddfe698cc892b5c99 -
+172.18.0.1 - [15/Jan/2025:08:05:36 +0000] "GET /api/ HTTP/1.1" 500 74812 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.439 1.439 93e1434f534d87d1c17cbca275e7e7ee -
+172.18.0.1 - [15/Jan/2025:08:06:21 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 57e1f7486d31493d7670d235404aec63 -
+172.18.0.1 - [15/Jan/2025:08:06:22 +0000] "GET /api/ HTTP/1.1" 500 76996 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.452 1.452 f76e607353145e5a66069f78dd1d58a7 -
+172.18.0.1 - [15/Jan/2025:08:06:37 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 130cb89a9909b84e9df973d15c340528 -
+172.18.0.1 - [15/Jan/2025:08:06:38 +0000] "GET /api/ HTTP/1.1" 500 72618 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.559 1.559 18c8f53a47e4dcd21538f1bfa09bf503 -
+172.18.0.1 - [15/Jan/2025:08:08:12 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 b333945fab36c603e494d830a2960002 -
+172.18.0.1 - [15/Jan/2025:08:08:14 +0000] "GET /api/ HTTP/1.1" 500 62547 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.587 1.587 199f481b4ab2260becfa65e64b1fda82 -
+172.18.0.1 - [15/Jan/2025:08:10:58 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 7aadc5307b099dc25eef8a6b42816614 -
+172.18.0.1 - [15/Jan/2025:08:11:02 +0000] "GET /api/ HTTP/1.1" 500 81293 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 3.962 3.962 07547e9264067571f99384f58cbc5030 -
+172.18.0.1 - [15/Jan/2025:08:11:40 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 c65d2b19de735632d864cf94fd452544 -
+172.18.0.1 - [15/Jan/2025:08:11:42 +0000] "GET /api/ HTTP/1.1" 500 81313 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.608 1.608 5810e47d1dd58c388b7a74a6b7b0b7b7 -
+172.18.0.1 - [15/Jan/2025:08:12:24 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 cd83a3a51ba7b0bfa0125cf76de949bf -
+172.18.0.1 - [15/Jan/2025:08:12:25 +0000] "GET /api/ HTTP/1.1" 500 81299 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.743 1.743 ee183da23e56e7f15bbadb5feca9869f -
+172.18.0.1 - [15/Jan/2025:08:15:13 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 77e423a0f7b254c3ef54e0cf7ed3a841 -
+172.18.0.1 - [15/Jan/2025:08:15:15 +0000] "GET /api/ HTTP/1.1" 500 81561 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.795 1.795 7a19a38d8af11324562b5b5104c83241 -
+172.18.0.1 - [15/Jan/2025:08:15:55 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 499a30ea5c882112bc5e0322956a3d04 -
+172.18.0.1 - [15/Jan/2025:08:15:56 +0000] "GET /api/ HTTP/1.1" 500 18453 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.590 1.590 2815209687cd089a45a9ed4fcd7112c8 -
+172.18.0.1 - [15/Jan/2025:08:16:20 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 b95b69993e70c0cfb871d2c4d7f1d070 -
+172.18.0.1 - [15/Jan/2025:08:16:22 +0000] "GET /api/ HTTP/1.1" 500 62553 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.492 1.492 29a59a0977e4f355606c4a9eddb4488e -
+172.18.0.1 - [15/Jan/2025:08:18:21 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 22567487306d95f4cffaa75a8aba0592 -
+172.18.0.1 - [15/Jan/2025:08:18:23 +0000] "GET /api/ HTTP/1.1" 500 18237 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.790 1.790 58d99f960e17dd2919045ee6ec46c32a -
+172.18.0.1 - [15/Jan/2025:08:19:18 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 f9dfe7852117eced2624819eeff93cb7 -
+172.18.0.1 - [15/Jan/2025:08:19:20 +0000] "GET /api/ HTTP/1.1" 500 118131 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.746 1.746 9303a4ae8d5c4ddf8d537e1e00f14303 -
+172.18.0.1 - [15/Jan/2025:08:20:03 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 865ecae17d30a36e61a6c0e5fe100b9a -
+172.18.0.1 - [15/Jan/2025:08:20:04 +0000] "GET /api/ HTTP/1.1" 500 87194 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.544 1.544 bb2970f09afb8cfd2b0f30f17f7cec44 -
+172.18.0.1 - [15/Jan/2025:08:20:23 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 49c6723516d316ca699aaa53a9483de2 -
+172.18.0.1 - [15/Jan/2025:08:20:25 +0000] "GET /api/ HTTP/1.1" 500 86163 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.785 1.785 bee02189c315511a8e5286f4da3f9691 -
+172.18.0.1 - [15/Jan/2025:08:24:05 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 55fc72d426e343456b103569bfd87f41 -
+172.18.0.1 - [15/Jan/2025:08:24:06 +0000] "GET /api/ HTTP/1.1" 500 23255 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.067 1.067 042d867e08ac505a8138bb589be10aa3 -
+172.18.0.1 - [15/Jan/2025:08:26:29 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 f0ca14120599430b3ec4795d7ef11db2 -
+172.18.0.1 - [15/Jan/2025:08:26:30 +0000] "GET /api/ HTTP/1.1" 500 18564 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.044 1.044 2fe225c38e19c0ae05cd0307592f18d8 -
+172.18.0.1 - [15/Jan/2025:08:27:09 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 7e1aa0d194d64dfd4028a51a4dcb6711 -
+172.18.0.1 - [15/Jan/2025:08:27:11 +0000] "GET /api/ HTTP/1.1" 500 18572 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.282 1.282 60837516b222e94c9c4b72b2aaead66b -
+172.18.0.1 - [15/Jan/2025:08:27:27 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 14099e0650cbe09a0390cdad75cd8053 -
+172.18.0.1 - [15/Jan/2025:08:27:28 +0000] "GET /api/ HTTP/1.1" 500 41916 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.833 0.832 d32f7d79aceb0d5a7bcfa67c0391b072 -
+172.18.0.1 - [15/Jan/2025:08:27:46 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 b2ad77a9ca5e3569e3b1e97e5b51dc70 -
+172.18.0.1 - [15/Jan/2025:08:27:48 +0000] "GET /api/ HTTP/1.1" 500 18797 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.779 1.779 56374d7286ee1ef27e66c6259578bc90 -
+172.18.0.1 - [15/Jan/2025:08:28:35 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 d1c87df9accbf9746f2dbcddacb1811d -
+172.18.0.1 - [15/Jan/2025:08:28:36 +0000] "GET /api/ HTTP/1.1" 500 42843 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.197 1.197 067c65937f18acad9de9537d596a97ac -
+172.18.0.1 - [15/Jan/2025:10:39:55 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 9ed819ae7d487093ea820fe28dcc3c1b -
+172.18.0.1 - [15/Jan/2025:10:39:56 +0000] "GET /api/ HTTP/1.1" 500 42851 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.781 0.781 6c1525e3630079471448daec72e7eb9c -
+172.18.0.1 - [15/Jan/2025:11:25:35 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 7225c8ca0aa73883a8a234cfe6437fc2 -
+172.18.0.1 - [15/Jan/2025:11:25:36 +0000] "GET /api/ HTTP/1.1" 500 22095 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.844 0.844 e5a21fe680bcbafcf88290fec81ec3c0 -
+172.18.0.1 - [15/Jan/2025:11:26:15 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 b2a20dcd1e18f5a92d0293d1dd24f04d -
+172.18.0.1 - [15/Jan/2025:11:26:16 +0000] "GET /api/ HTTP/1.1" 500 18567 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.943 0.943 95a1b7c6aa823f2cf5132dd05bba46e3 -
+172.18.0.1 - [15/Jan/2025:11:26:28 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 a4cf2e9129a694ab17bf9a829b109f78 -
+172.18.0.1 - [15/Jan/2025:11:26:30 +0000] "GET /api/ HTTP/1.1" 500 18569 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.786 1.786 36f1aafb5186ef0d6f0fbe92bfc4b76c -
+172.18.0.1 - [15/Jan/2025:11:26:32 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 c458ab7a86bebf979e4e7d6f2f084824 -
+172.18.0.1 - [15/Jan/2025:11:26:33 +0000] "GET /api/ HTTP/1.1" 500 22097 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.177 1.177 d9465fdcbcb6a85080b5c177059f9a8f -
+172.18.0.1 - [15/Jan/2025:11:27:11 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 ee63f19d30cbcd3d953c06afa3f6cb51 -
+172.18.0.1 - [15/Jan/2025:11:27:12 +0000] "GET /api/ HTTP/1.1" 500 37430 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.987 0.987 3940747f23c3cb66838bb4efa3c2a048 -
+172.18.0.1 - [15/Jan/2025:11:27:35 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 76c61e951977ad21250a95862d0ff26a -
+172.18.0.1 - [15/Jan/2025:11:27:36 +0000] "GET /api/ HTTP/1.1" 500 42841 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.402 1.402 b461256b580353d0f4999444e5817d29 -
+172.18.0.1 - [15/Jan/2025:11:29:00 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 d40eeab593681bda3a94999775c70166 -
+172.18.0.1 - [15/Jan/2025:11:29:02 +0000] "GET /api/ HTTP/1.1" 500 42841 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 2.238 2.238 639eb8d34825a1b6567749520eaae2c0 -
+172.18.0.1 - [15/Jan/2025:11:29:50 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 c3fa976b5e4bf3c05d48fe647ca50f92 -
+172.18.0.1 - [15/Jan/2025:11:29:51 +0000] "GET /api/ HTTP/1.1" 500 40240 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.862 0.862 7dbbb49e751847411c7068748ebcd3ef -
+172.18.0.1 - [15/Jan/2025:11:30:10 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 b78c7ae2e6f0b1f1d1f12dce16baf895 -
+172.18.0.1 - [15/Jan/2025:11:30:12 +0000] "GET /api/ HTTP/1.1" 500 40244 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 1.167 1.167 f717f412f39e8de0592737a7d15fe48d -
+172.18.0.1 - [15/Jan/2025:11:31:39 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 94574ac51502d9ae2fb0113ffb55831a -
+172.18.0.1 - [15/Jan/2025:11:31:40 +0000] "GET /api/ HTTP/1.1" 500 18877 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.711 0.711 615aa94186377e17649d11d9e4f076ca -
+172.18.0.1 - [15/Jan/2025:11:31:58 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 904c6aa80fcad70c8838675c8958141f -
+172.18.0.1 - [15/Jan/2025:11:31:59 +0000] "GET /api/ HTTP/1.1" 500 18879 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.988 0.988 dd7d35a6f373de63924e54b052e11714 -
+172.18.0.1 - [15/Jan/2025:11:32:08 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 5e873255c558bf8c351518e738019972 -
+172.18.0.1 - [15/Jan/2025:11:32:09 +0000] "GET /api/ HTTP/1.1" 500 59600 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.881 0.881 124ddcdb3da151f5e11a798619d6493a -
+172.18.0.1 - [15/Jan/2025:11:33:42 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 b3907ec98e132b7163a99b78657be391 -
+172.18.0.1 - [15/Jan/2025:11:33:48 +0000] "GET /api/ HTTP/1.1" 500 19093 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 6.273 6.273 b65a44a8f7c2669293ea1ddff0051cf4 -
+172.18.0.1 - [15/Jan/2025:11:33:52 +0000] "GET /api HTTP/1.1" 301 169 "-" "PostmanRuntime/7.43.0" - - 0.000 fcd5a94c25d28e937a7aaeb6706de0f5 -
+172.18.0.1 - [15/Jan/2025:11:33:53 +0000] "GET /api/ HTTP/1.1" 500 64717 "http://localhost:8090/api" "PostmanRuntime/7.43.0" 172.18.0.3:9000 0.828 0.828 8b6d68a4afc32d9472f23dc345a10a0a -
+172.20.0.1 - [17/Jan/2025:06:26:40 +0000] "GET / HTTP/1.1" 403 186 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" - - 0.000 5b8c809d4bc38807415d6830f0d7d3e3 -
+172.20.0.1 - [17/Jan/2025:06:26:40 +0000] "GET /favicon.ico HTTP/1.1" 404 187 "http://localhost:8020/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" - - 0.000 bc61de834312c858bfe3107ad8dc36c6 -
+172.20.0.1 - [17/Jan/2025:06:26:51 +0000] "GET /api HTTP/1.1" 301 169 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" - - 0.000 cb8b5f20cf7b0b7fb6a2cbdfe99c1269 -
+172.20.0.1 - [17/Jan/2025:06:26:51 +0000] "GET /api/ HTTP/1.1" 500 64717 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" 172.20.0.3:9000 0.651 0.651 5f688a3cc4d3c335c7b09aebe57bc6b9 -
+172.20.0.1 - [17/Jan/2025:06:29:42 +0000] "GET /api/ HTTP/1.1" 200 55 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" 172.20.0.3:9000 0.073 0.073 ac382aebead9d1236f8e6fe717103ea3 -
+172.20.0.1 - [17/Jan/2025:06:30:12 +0000] "GET /api/ HTTP/1.1" 200 55 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" 172.20.0.3:9000 0.075 0.075 014893e1e55afd6bfdaaff754dd35e67 -
+172.20.0.1 - [17/Jan/2025:06:30:16 +0000] "GET /api/start-container HTTP/1.1" 404 2311 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" 172.20.0.3:9000 0.078 0.078 798ba04333862e5e813e41979a33e75f -
+172.20.0.1 - [17/Jan/2025:06:30:31 +0000] "GET /api/start-container HTTP/1.1" 404 2311 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" 172.20.0.3:9000 0.077 0.077 fb474188a6f655bb6cadee56fb4d5e4b -
+172.20.0.1 - [17/Jan/2025:06:30:32 +0000] "GET /api/start-container HTTP/1.1" 404 2311 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" 172.20.0.3:9000 0.074 0.074 152791722c82b71d62875a79887fd7dc -
+172.20.0.1 - [17/Jan/2025:06:30:36 +0000] "GET /api/start-container HTTP/1.1" 404 2311 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" 172.20.0.3:9000 0.077 0.077 066591de630a9003925db317e6bac98d -
+172.20.0.1 - [17/Jan/2025:06:31:02 +0000] "GET /up HTTP/1.1" 404 187 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" - - 0.000 43681b4e238c579087d409b5a638608a -
+172.20.0.1 - [17/Jan/2025:06:31:09 +0000] "GET /api/ HTTP/1.1" 200 55 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" 172.20.0.3:9000 0.071 0.071 091c63dffdf7abd1a9eca62b66aa89c9 -
+172.20.0.1 - [17/Jan/2025:06:31:11 +0000] "GET /api/ HTTP/1.1" 200 55 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" 172.20.0.3:9000 0.069 0.069 a2d5bb40c58fe28394463653576d4eef -
+172.20.0.1 - [17/Jan/2025:06:31:16 +0000] "GET /api/start-contaimer HTTP/1.1" 404 2311 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" 172.20.0.3:9000 0.072 0.072 a16e4ce5b332e88741c7862ce2830583 -

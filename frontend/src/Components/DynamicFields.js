@@ -21,7 +21,7 @@ export default function DynamicFields({ selectionType, options, ...props }) {
     };
 
     switch (selectionType) {
-        case 'as':
+        case 'checkbox':
             return (
                 <div className="flex flex-col gap-2">
                     {parsedOptions?.map((opt) => (
@@ -35,7 +35,7 @@ export default function DynamicFields({ selectionType, options, ...props }) {
                     ))}
                 </div>
             )
-        case 'checkbox':
+        case 'radio-button':
             return (
                 <div className="flex flex-col gap-2">
                     {parsedOptions?.map((opt) => (

@@ -100,7 +100,7 @@ export default function Rating(
         >
             <Space
                 direction="horizontal" 
-                style={{width: '100%', justifyContent: 'center', marginBottom : 10}}
+                style={{width: '100%', marginBottom : 10}}
             >
                 <Text>
                     {titleEn}
@@ -108,7 +108,7 @@ export default function Rating(
             </Space>
             <Space
                 direction="horizontal" 
-                style={{width: '100%', justifyContent: 'center'}}
+                style={{width: '100%'}}
             >
                 {renderRatingComponent()}
             </Space>

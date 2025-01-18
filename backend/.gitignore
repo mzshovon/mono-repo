@@ -8,7 +8,7 @@ app/storage/
 public/storage
 
 storage/*.key
-/storage/nginx/*.key
+/storage/nginx
 .env
 Homestead.yaml
 Homestead.json

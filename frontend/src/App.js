@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <SystemCheckAlert>
-        <FormUI/>
+        <FormUI />
       </SystemCheckAlert>
     </div>
   );

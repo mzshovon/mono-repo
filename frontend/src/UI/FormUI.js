@@ -5,7 +5,7 @@ import DynamicFields from '../Components/DynamicFields';
 
 export default function FormUI() {
   const URL = 'http://172.16.191.16:7000/api/v1/questions/mybl-android/mock-event/';
-  const TOKEN = 'nGwKSdFO7KXGQQ3Uc-2SPDAxRFBNUkx3dWtDTVRYZDRvVVhCMmdJSTZvRnY0dTVSSDUxQVU1aW1wRmRDZGNuTEVKYmdjc0hOOGpzZ2xQdDdsY0ZoN2xhOUZ4LzA4cUxEK2Z4MlNUREdyUjk5UFMvaXJzM0R3RTZsdmUwc2ZGbjRTeGpWUlpNWVJtcGdrV2FR';
+  const TOKEN = 'nGwKSdFO7KXGQQ3Uc-Token';
   const [isLoading, setIsLoading] = useState(false);
   const [response, setResponse] = useState(null);
 

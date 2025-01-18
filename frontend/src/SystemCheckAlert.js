@@ -1,6 +1,6 @@
 import {React, useEffect, useState} from 'react'
 import {Layout, Alert, theme} from 'antd'
-import Loader from './Loader';
+import Loader from './Components/Loader';
 
 export default function SystemCheckAlert({children}) {
     const url = "http://localhost:8020/api";
@@ -58,7 +58,6 @@ export default function SystemCheckAlert({children}) {
                     description={data?.message}
                     defaultPadding
                     type="error"
-                    showIcon
                 />
             </div>
             </Layout>

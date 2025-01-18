@@ -10,8 +10,9 @@ Route::get('/user', function (Request $request) {
 
 
 Route::get('/', function(){
-    $status = [200, 400, 500];
+    $status = [200];
     $message = ["Application is up", "Application is down"];
+    sleep(1);
     return response(
         [
             "status" => $status[array_rand($status, 1)],

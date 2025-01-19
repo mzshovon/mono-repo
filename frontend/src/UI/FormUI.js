@@ -4,6 +4,7 @@ import Rating from '../Components/Rating';
 import DynamicFields from '../Components/DynamicFields';
 
 export default function FormUI() {
+  // URL will be pulled from ENV
   const URL = 'http://172.16.191.16:7000/api/v1/questions/mybl-android/mock-event/';
   const TOKEN = 'nGwKSdFO7KXGQQ3Uc-Token';
   const [isLoading, setIsLoading] = useState(false);

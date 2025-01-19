@@ -3,6 +3,7 @@ import {Layout, Alert, theme} from 'antd'
 import Loader from './Components/Loader';
 
 export default function SystemCheckAlert({children}) {
+    // URL will be pulled from ENV
     const url = "http://localhost:8020/api";
     const [isLoading, setIsLoading] = useState(false);
     const [data, setData] = useState(0);

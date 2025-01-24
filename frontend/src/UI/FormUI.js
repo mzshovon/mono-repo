@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { Card, Form, Button, Skeleton } from 'antd'
+import { Card, Form, Button, Skeleton, Badge } from 'antd'
 import Rating from '../Components/Rating';
 import DynamicFields from '../Components/DynamicFields';
 
 export default function FormUI() {
   // URL will be pulled from ENV
-  const URL = 'http://172.16.191.16:7000/api/v1/questions/mybl-android/mock-event/';
-  const TOKEN = 'nGwKSdFO7KXGQQ3Uc-Token';
+  const URL = 'http://localhost:8020/api/questions/';
+  const TOKEN = 'gWYGm7K7qqW2_KvoQ_IPl2RLRjR0Z1ZtSmwva1NpS09vQWdEQVMwcm5ZS1o1TFI4NTJIbWYyazFuNGt0ZnU3cldGdjdUNXRwMDBNYkhWUzIwZWtLS3FsYUZRdDRIWUVLS1htcG04dDZ1MmdqWjJGdlB3YS9McEpHZE83eCt4K1RUUmNqK2dUUjNJVllkck5C';
   const [isLoading, setIsLoading] = useState(false);
   const [response, setResponse] = useState(null);
 
@@ -42,6 +42,10 @@ export default function FormUI() {
       alignItems: 'center',
       padding: '20px'
     }}>
+      <Badge.Ribbon
+        text='Beta'
+        color='volcano'
+      >
       <Card
         style={{
           width: '100%',
@@ -82,8 +86,12 @@ export default function FormUI() {
                 ]}
               >
                 <DynamicFields
+                  id={question.id}
                   selectionType={question.selection_type}
                   options={question.options}
+                  inputType = {question?.input_type}
+                  min = {question?.min}
+                  max = {question?.max}
                 />
               </Form.Item>
             ))
@@ -96,6 +104,7 @@ export default function FormUI() {
           </Form.Item>
         </Form>
       </Card>
+      </Badge.Ribbon>
     </div>
   )
 }

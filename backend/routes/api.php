@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\QuestionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\HttpFoundation\Response;
@@ -20,11 +21,4 @@ Route::get('/', function(){
         ]
     );
 });
-Route::get('start-container', function(){
-    return response(
-        [
-            "status" => Response::HTTP_OK,
-            "message" => "Container is started"
-        ]
-    );
-});
+Route::get('questions/{token}', [QuestionController::class, 'questions']);

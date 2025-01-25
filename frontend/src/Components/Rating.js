@@ -24,13 +24,18 @@ const parseSelectionType = (selectionType) => {
 export default function Rating(
     {
         selectionType = 'rating_1_5_emotion',  // default value
-        titleEn = '',  // default value
-        titleBn = '',  // default value
-        defaultValue = 0,
-        disabled = false,
-        onChange
+        ...props
     }
 ) {
+    const {
+        titleEn, 
+        titleBn, 
+        defaultValue, 
+        language,
+        options,
+        disabled, 
+        onChange
+    } = {...props}
     const [selected, setSelected] = useState(defaultValue);
 
     const ratingConfig = useMemo(() => {
@@ -67,15 +72,15 @@ export default function Rating(
             return (
                 <Flex vertical gap="small">
                     <Flex gap='small' wrap>
-                        {buttons.map((number) => (                                  
+                        {JSON.parse(options).map((number) => (                                  
                             <Button
-                                key = {number}
+                                key = {number?.id}
                                 color={selected === number ? "primary" : "default"}
                                 variant="outlined"
-                                onClick={() => handleClick(number)}
+                                onClick={() => handleClick(number?.value)}
                                 disabled={disabled}
                                 >
-                                {number}
+                                {language == "BN" ? number?.title_bn : number?.title_en}
                             </Button>
                         ))}
                     </Flex>
@@ -103,7 +108,7 @@ export default function Rating(
                 style={{width: '100%', marginBottom : 10}}
             >
                 <Text>
-                    {titleEn}
+                    {language == "BN" ? titleBn : titleEn}
                 </Text>
             </Space>
             <Space

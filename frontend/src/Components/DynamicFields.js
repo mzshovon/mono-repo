@@ -36,7 +36,7 @@ export default function DynamicFields({
 }) {
     const Component = componentMap[selectionType] || Input;
     const parsedOptions = options ? JSON.parse(options) : null;
-    const { type, min, max } = { ...props };
+    const { type, min, max, required } = { ...props };
     const [value, setValue] = useState(1);
     const onChange = (e) => {
         console.log('radio checked', e.target.value);
@@ -110,7 +110,7 @@ export default function DynamicFields({
                         marginBottom: 8,
                         width: '100%',
                     }}
-                    required
+                    required = {required}
                 />
             )
         case 'select':
@@ -121,6 +121,7 @@ export default function DynamicFields({
                     id={id}
                     {...props}
                     allowClear
+                    required = {required}
                     options={parsedOptions?.map(opt => ({
                         id: opt.id,
                         label: language == "BN" ? opt.title_bn : opt.title_en,
@@ -137,6 +138,7 @@ export default function DynamicFields({
                     accept="image/*"
                     beforeUpload={beforeUpload}
                     multiple={false}
+                    required = {required}
                 >
                     {contextHolder}
                     <p className="ant-upload-drag-icon">

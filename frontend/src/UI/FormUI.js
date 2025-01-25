@@ -113,6 +113,7 @@ export default function FormUI() {
                   type = {question?.input_type}
                   min = {question?.min}
                   max = {question?.max}
+                  required = {question?.required}
                 />
               </Form.Item>
             ))

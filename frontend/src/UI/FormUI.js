@@ -12,6 +12,7 @@ export default function FormUI() {
   const [isLoading, setIsLoading] = useState(false);
   const [response, setResponse] = useState(null);
   const [language, setLanguage] = useState("EN");
+  const [formTheme, setFormTheme] = useState({});
   const [form] = Form.useForm();
 
 
@@ -21,7 +22,9 @@ export default function FormUI() {
         setIsLoading(true);
         const result = await fetch(`${URL}${TOKEN}`);
         result.json().then(json => {
-          setResponse(json?.data)
+          setResponse(json?.data);
+          setFormTheme(json?.data?.theme?.form);
+          
         })
       } catch (error) {
         console.log(error);
@@ -31,6 +34,7 @@ export default function FormUI() {
     }
     fetchData();
   }, [])
+
   const onFinish = (values) => {
     const formData = new FormData();
 
@@ -70,9 +74,11 @@ export default function FormUI() {
         <Card
           style={{
             width: '100%',
-            maxWidth: '600px'
+            maxWidth: '600px',
+            
           }}
-          title="Questions"
+          headStyle = {{backgroundColor: formTheme?.header?.bg_color ?? ''}}
+          title={language == "BN" ? formTheme?.header?.text_bn : formTheme?.header?.text_en}
           extra={<SwitchButton
             checked={language == 'EN'}
             onChange={handleToggleChange}
@@ -132,8 +138,18 @@ export default function FormUI() {
               ))
             )}
             <Form.Item>
-              <Button type="primary" htmlType="submit" block>
-                Submit
+              <Button
+                color= {formTheme?.submit_button?.bg_color ?? 'primary'}
+                variant='filled'
+                // type="primary" 
+                htmlType="submit" 
+                block
+                style={{
+                  color:formTheme?.submit_button?.text_color ?? 'white',
+                  fontWeight: 'bold'
+                }}
+              >
+                  {language == "BN" ? formTheme?.submit_button?.text_bn : formTheme?.submit_button?.text_en}
               </Button>
             </Form.Item>
           </Form>

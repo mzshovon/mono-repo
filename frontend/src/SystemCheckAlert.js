@@ -1,10 +1,10 @@
 import {React, useEffect, useState} from 'react'
 import {Layout, Alert, theme} from 'antd'
 import Loader from './Components/Loader';
+import {apiEndPoint} from '../src/constants/config';
 
 export default function SystemCheckAlert({children}) {
     // URL will be pulled from ENV
-    const url = "http://localhost:8020/api";
     const [isLoading, setIsLoading] = useState(false);
     const [data, setData] = useState(0);
     const [isSystemUp, setIsSystemUp] = useState(false);
@@ -16,7 +16,7 @@ export default function SystemCheckAlert({children}) {
         const fetchData = async () => {
             try {
                 setIsLoading(true);
-                const result = await fetch(url);
+                const result = await fetch(apiEndPoint);
                 result.json().then(json => {      
                     if(json?.status == 200) {
                         setData(json)

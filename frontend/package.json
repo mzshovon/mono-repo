@@ -5,6 +5,8 @@
   "dependencies": {
     "antd": "^5.23.1",
     "cra-template": "1.2.0",
+    "dotenv": "^16.4.7",
+    "env-cmd": "^10.1.0",
     "nodemon": "^3.1.9",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -13,7 +15,7 @@
     "web-vitals": "^4.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "env-cmd -f ./.env react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

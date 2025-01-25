@@ -3,10 +3,11 @@ import { Card, Form, Button, Skeleton, Badge } from 'antd'
 import Rating from '../Components/Rating';
 import DynamicFields from '../Components/DynamicFields';
 import SwitchButton from '../Components/SwitchButton';
+import {apiEndPoint} from '../constants/config';
 
 export default function FormUI() {
   // URL will be pulled from ENV
-  const URL = 'http://localhost:8020/api/questions/';
+  const URL = `${apiEndPoint}questions/`;  
   const TOKEN = 'token';
   const [isLoading, setIsLoading] = useState(false);
   const [response, setResponse] = useState(null);
@@ -56,6 +57,7 @@ export default function FormUI() {
   return (
     <div style={{
       minHeight: '90vh',
+      // marginTop: '50px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',

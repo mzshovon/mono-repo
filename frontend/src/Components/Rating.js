@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react'
 import { InputNumber, Rate, Typography, Space, ConfigProvider, Flex, Button } from 'antd'
 import { FrownOutlined, MehOutlined, SmileOutlined } from '@ant-design/icons';
 
-const { Text, Link } = Typography
+const { Text } = Typography
 
 const customIcons = {
     1: <FrownOutlined />,
@@ -49,9 +49,9 @@ export default function Rating(
     };
     const renderRatingComponent = () => {
         const { min, max, type } = ratingConfig;
-        const buttons = type === 'number' 
-        ? Array.from({ length: max - min + 1 }, (_, index) => min + index)
-        : [];
+        // const buttons = type === 'number' 
+        // ? Array.from({ length: max - min + 1 }, (_, index) => min + index)
+        // : [];
         const handleClick = (value) => {
             setSelected(value);
             if (onChange) {
@@ -75,8 +75,8 @@ export default function Rating(
                         {JSON.parse(options).map((number) => (                                  
                             <Button
                                 key = {number?.id}
-                                color={selected === number ? "primary" : "default"}
-                                variant="outlined"
+                                color={selected === number?.value ? "primary" : "default"}
+                                variant={selected === number?.value ? "solid" : "outlined"}
                                 onClick={() => handleClick(number?.value)}
                                 disabled={disabled}
                                 >

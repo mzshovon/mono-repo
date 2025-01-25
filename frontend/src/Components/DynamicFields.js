@@ -7,9 +7,11 @@ import {
     InputNumber,
     Select,
     Upload,
-    notification
+    notification,
+    Form
 } from 'antd';
 import { InboxOutlined } from '@ant-design/icons';
+import Recorder from './Recorder';
 
 const { Dragger } = Upload
 const { TextArea } = Input
@@ -22,22 +24,34 @@ const componentMap = {
     select: Select,
     number: InputNumber,
     upload: Dragger,
+    recorder: Recorder,
     rate: Rate,
     // Add more mappings as needed
 };
 
 
-export default function DynamicFields({ 
-    id, 
-    selectionType, 
-    options, 
-    language, 
-    ...props 
+export default function DynamicFields({
+    id,
+    selectionType,
+    options,
+    language,
+    ...props
 }) {
     const Component = componentMap[selectionType] || Input;
     const parsedOptions = options ? JSON.parse(options) : null;
-    const { type, min, max, required } = { ...props };
+    const { type, min, max, required, form } = { ...props };
     const [value, setValue] = useState(1);
+    const [audioData, setAudioData] = useState(null);
+    const handleAudioRecorded = (data) => {
+        console.log("Audio recorded:", data);
+        
+        // Use setFieldsValue instead of setFieldValue
+        form.setFieldsValue({
+            [`question_${id}`]: data.blob
+        });
+        
+        setAudioData(data);
+    };
     const onChange = (e) => {
         console.log('radio checked', e.target.value);
         setValue(e.target.value);
@@ -110,7 +124,7 @@ export default function DynamicFields({
                         marginBottom: 8,
                         width: '100%',
                     }}
-                    required = {required}
+                    required={required}
                 />
             )
         case 'select':
@@ -121,7 +135,7 @@ export default function DynamicFields({
                     id={id}
                     {...props}
                     allowClear
-                    required = {required}
+                    required={required}
                     options={parsedOptions?.map(opt => ({
                         id: opt.id,
                         label: language == "BN" ? opt.title_bn : opt.title_en,
@@ -133,12 +147,11 @@ export default function DynamicFields({
             return (
                 <Component
                     {...props}
-                    fileList={[]}
                     id={id}
                     accept="image/*"
                     beforeUpload={beforeUpload}
                     multiple={false}
-                    required = {required}
+                    required={required}
                 >
                     {contextHolder}
                     <p className="ant-upload-drag-icon">
@@ -148,6 +161,14 @@ export default function DynamicFields({
                         {language == "BN" ? 'আপলোড করতে এই এলাকায় ফাইলটি ক্লিক করুন বা টেনে আনুন' : 'Click or drag file to this area to upload'}
                     </p>
                 </Component>
+            )
+        case 'recorder':
+            return (
+                <Component
+                    {...props}
+                    id={id}
+                    onAudioRecorded={handleAudioRecorded}
+                />
             )
         default:
             return <Component

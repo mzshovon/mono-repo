@@ -1,14 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
 import SystemCheckAlert from './SystemCheckAlert';
 import FormUI from './UI/FormUI';
+import { ConfigProvider } from 'antd';
+import '../node_modules/antd/dist/reset.css'
 
 function App() {
   return (
     <div className="App">
-      <SystemCheckAlert>
-        <FormUI />
-      </SystemCheckAlert>
+        <ConfigProvider>
+        {/* <ConfigProvider theme={{ token: { colorPrimary: '#00b96b' } }}> */}
+        <SystemCheckAlert>
+          <FormUI />
+        </SystemCheckAlert>
+      </ConfigProvider>
     </div>
   );
 }

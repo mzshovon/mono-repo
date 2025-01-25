@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react'
 import { Card, Form, Button, Skeleton, Badge } from 'antd'
 import Rating from '../Components/Rating';
 import DynamicFields from '../Components/DynamicFields';
+import SwitchButton from '../Components/SwitchButton';
 
 export default function FormUI() {
   // URL will be pulled from ENV
   const URL = 'http://localhost:8020/api/questions/';
-  const TOKEN = 'gWYGm7K7qqW2_KvoQ_IPl2RLRjR0Z1ZtSmwva1NpS09vQWdEQVMwcm5ZS1o1TFI4NTJIbWYyazFuNGt0ZnU3cldGdjdUNXRwMDBNYkhWUzIwZWtLS3FsYUZRdDRIWUVLS1htcG04dDZ1MmdqWjJGdlB3YS9McEpHZE83eCt4K1RUUmNqK2dUUjNJVllkck5C';
+  const TOKEN = 'token';
   const [isLoading, setIsLoading] = useState(false);
   const [response, setResponse] = useState(null);
+  const [language, setLanguage] = useState("EN");
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,15 +30,22 @@ export default function FormUI() {
     fetchData();
   }, [])
   const onFinish = (values) => {
-    console.log('Form values:', values);
+    console.log('Form values:', JSON.stringify(values));
   };
 
   const handleRatingChange = (value) => {
     console.log('Rating changed to:', value);
   };
+
+  const handleToggleChange = (checked) => {
+    const selectedLanguage = checked ? 'EN' : 'BN';
+    setLanguage(selectedLanguage);
+    console.log('Language changed to:', selectedLanguage);
+  };
+
   return (
     <div style={{
-      minHeight: '70vh',
+      minHeight: '90vh',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
@@ -52,6 +61,10 @@ export default function FormUI() {
           maxWidth: '600px'
         }}
         title="Questions"
+        extra={<SwitchButton 
+          checked = {language == 'EN'}
+          onChange = {handleToggleChange}
+        />}
       >
         {isLoading && (
           <Skeleton active />
@@ -63,20 +76,27 @@ export default function FormUI() {
           autoComplete="off"
         >
           {response?.nps && (
-            <Rating
-              selectionType={response.nps?.selection_type}
-              titleEn={response.nps?.question_en}
-              titleBn={response.nps?.question_bn}
-              defaultValue={1}
-              onChange={handleRatingChange}
-            />
+            <Form.Item
+              key={response.nps?.id}
+              name={`question_${response.nps?.id}`}
+            >
+              <Rating
+                selectionType={response.nps?.selection_type}
+                titleEn={response.nps?.question_en}
+                titleBn={response.nps?.question_bn}
+                initialValues={1}
+                language={language}
+                options={response.nps?.options}
+                onChange={handleRatingChange}
+              />
+            </Form.Item>
           )}
 
           {response?.questions && Object.entries(response?.questions).map(([range, questionList]) =>
             questionList.map((question) => (
               <Form.Item
                 key={question.id}
-                label={question.question_en}
+                label={language == "BN" ? question.question_bn : question.question_en}
                 name={`question_${question.id}`}
                 rules={[
                   {
@@ -89,7 +109,8 @@ export default function FormUI() {
                   id={question.id}
                   selectionType={question.selection_type}
                   options={question.options}
-                  inputType = {question?.input_type}
+                  language={language}
+                  type = {question?.input_type}
                   min = {question?.min}
                   max = {question?.max}
                 />

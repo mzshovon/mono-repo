@@ -23,7 +23,7 @@ const componentMap = {
     'radio-button': Radio.Group,
     select: Select,
     number: InputNumber,
-    upload: Dragger,
+    file: Dragger,
     recorder: Recorder,
     rate: Rate,
     // Add more mappings as needed
@@ -143,7 +143,7 @@ export default function DynamicFields({
                     }))}
                 />
             )
-        case 'upload':
+        case 'file':
             return (
                 <Component
                     {...props}

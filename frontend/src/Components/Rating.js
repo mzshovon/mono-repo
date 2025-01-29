@@ -34,7 +34,8 @@ export default function Rating(
         language,
         options,
         disabled, 
-        onChange
+        onChange,
+        setSubmitBtnStatus
     } = {...props}
     const [selected, setSelected] = useState(defaultValue);
 
@@ -57,6 +58,7 @@ export default function Rating(
             if (onChange) {
                 onChange(value);
             }
+            setSubmitBtnStatus(false);
         };
 
         if (type === 'star') {

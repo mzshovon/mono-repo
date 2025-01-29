@@ -4,6 +4,7 @@ import Rating from '../Components/Rating';
 import DynamicFields from '../Components/DynamicFields';
 import SwitchButton from '../Components/SwitchButton';
 import {apiEndPoint} from '../constants/config';
+import {useNavigate} from 'react-router-dom'
 
 export default function FormUI() {
   // URL will be pulled from ENV
@@ -13,7 +14,9 @@ export default function FormUI() {
   const [response, setResponse] = useState(null);
   const [language, setLanguage] = useState("EN");
   const [formTheme, setFormTheme] = useState({});
+  const [submitBtnStatus, setSubmitBtnStatus] = useState(true);
   const [form] = Form.useForm();
+  const navigate = useNavigate();
 
 
   useEffect(() => {
@@ -51,6 +54,27 @@ export default function FormUI() {
 
     // Log or send formData
     console.log('Form data entries:', [...formData.entries()]);
+    const error = 500;
+    navigate('/fail', 
+      { 
+        state: {
+          language : language,
+          buttonData : response?.theme?.error[error].submit_button,
+          header : response?.theme?.error[error].header,
+          content : response?.theme?.error[error].content
+        }
+      }
+    );
+    // navigate('/success', 
+    //   { 
+    //     state: {
+    //       language : language,
+    //       buttonData : response?.theme?.end?.submit_button,
+    //       header : response?.theme?.end?.header,
+    //       content : response?.theme?.end?.content
+    //     }
+    //   }
+    // );
   };
 
   const handleToggleChange = (checked) => {
@@ -106,6 +130,7 @@ export default function FormUI() {
                   initialValues={1}
                   language={language}
                   options={response.nps?.options}
+                  setSubmitBtnStatus = {setSubmitBtnStatus}
                 />
               </Form.Item>
             )}
@@ -141,6 +166,7 @@ export default function FormUI() {
               <Button
                 color= {formTheme?.submit_button?.bg_color ?? 'primary'}
                 variant='filled'
+                disabled = {submitBtnStatus}
                 // type="primary" 
                 htmlType="submit" 
                 block

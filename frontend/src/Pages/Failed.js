@@ -1,10 +1,10 @@
 import { Button, Card } from 'antd'
 import React from 'react'
 import { useLocation } from 'react-router'
-import { CheckCircleFilled } from '@ant-design/icons';
+import { CloseCircleFilled } from '@ant-design/icons';
 
 
-export default function Success() {
+export default function Failed() {
   const location = useLocation();
   // parsed data
   const header = location.state?.header;
@@ -30,8 +30,8 @@ export default function Success() {
                 padding: '20px',
           }}>
             <div style={{textAlign:'center'}}>
-                <CheckCircleFilled
-                  style={{ fontSize: '56px', color: '#70c287' }} 
+                <CloseCircleFilled
+                  style={{ fontSize: '56px', color: '#bf5549' }} 
                 />
                 <div
                   style={{

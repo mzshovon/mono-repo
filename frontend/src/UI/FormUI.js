@@ -4,7 +4,7 @@ import Rating from '../Components/Rating';
 import DynamicFields from '../Components/DynamicFields';
 import SwitchButton from '../Components/SwitchButton';
 import {apiEndPoint} from '../constants/config';
-import {useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom';
 
 export default function FormUI() {
   // URL will be pulled from ENV

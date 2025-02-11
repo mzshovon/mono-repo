@@ -2,6 +2,7 @@ import { Button, Card } from 'antd'
 import React from 'react'
 import { useLocation } from 'react-router'
 import { CheckCircleFilled } from '@ant-design/icons';
+import confetti from 'canvas-confetti';
 
 
 export default function Success() {
@@ -11,6 +12,17 @@ export default function Success() {
   const content = location.state?.content;
   const buttonData = location.state?.buttonData;
   const language = location.state?.language;
+
+  confetti({
+      particleCount: 120,
+      spread: 50,
+      ticks: 250,
+      gravity: 2,
+      decay: 0.94,
+      startVelocity: 30,
+      // shapes: ["heart"],
+      colors: ["FFC0CB", "FF69B4", "FF1493", "C71585"],
+  });
 
   console.log(buttonData, 'btn');
   

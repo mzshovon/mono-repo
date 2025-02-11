@@ -20,23 +20,32 @@ export default function FormUI() {
 
 
   useEffect(() => {
+    let isMounted = true;
     const fetchData = async () => {
       try {
         setIsLoading(true);
         const result = await fetch(`${URL}${TOKEN}`);
-        result.json().then(json => {
+        const json = await result.json();
+        
+        if (isMounted) {
           setResponse(json?.data);
           setFormTheme(json?.data?.theme?.form);
-          
-        })
+        }
       } catch (error) {
-        console.log(error);
+        console.error('Error fetching data:', error);
       } finally {
-        setIsLoading(false);
+        if (isMounted) {
+          setIsLoading(false);
+        }
       }
-    }
+    };
+
     fetchData();
-  }, [])
+    // Cleanup function
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   const onFinish = (values) => {
     const formData = new FormData();
@@ -54,27 +63,27 @@ export default function FormUI() {
 
     // Log or send formData
     console.log('Form data entries:', [...formData.entries()]);
-    const error = 500;
-    navigate('/fail', 
-      { 
-        state: {
-          language : language,
-          buttonData : response?.theme?.error[error].submit_button,
-          header : response?.theme?.error[error].header,
-          content : response?.theme?.error[error].content
-        }
-      }
-    );
-    // navigate('/success', 
+    // const error = 500;
+    // navigate('/fail', 
     //   { 
     //     state: {
     //       language : language,
-    //       buttonData : response?.theme?.end?.submit_button,
-    //       header : response?.theme?.end?.header,
-    //       content : response?.theme?.end?.content
+    //       buttonData : response?.theme?.error[error].submit_button,
+    //       header : response?.theme?.error[error].header,
+    //       content : response?.theme?.error[error].content
     //     }
     //   }
     // );
+    navigate('/success', 
+      { 
+        state: {
+          language : language,
+          buttonData : response?.theme?.end?.submit_button,
+          header : response?.theme?.end?.header,
+          content : response?.theme?.end?.content
+        }
+      }
+    );
   };
 
   const handleToggleChange = (checked) => {

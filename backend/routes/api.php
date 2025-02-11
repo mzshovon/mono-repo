@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\AudioController;
 use App\Http\Controllers\Frontend\QuestionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -22,3 +23,5 @@ Route::get('/', function(){
     );
 });
 Route::get('questions/{token}', [QuestionController::class, 'questions']);
+Route::post('upload-audio', [AudioController::class, 'uploadAudio']);
+

@@ -17,3 +17,4 @@ Homestead.json
 .phpunit.result.cache
 docker-compose.yml
 db-data
+googlekey.json

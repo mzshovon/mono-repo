@@ -34,5 +34,8 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'google_cloud' => [
+        'key_file_path' => env('GOOGLE_CLOUD_KEY_FILE_PATH', '../googlekey.json'),
+    ],
 
 ];
